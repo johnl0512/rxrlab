@@ -2,10 +2,10 @@
 
 pragma solidity 0.8.20;
 
-import "./ERC20.sol";
-import "./ERC20Burnable.sol";
-import "./ERC20Pausable.sol";
-import "./Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract RXRToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable {
     uint256 public _maxSupply; //铸币上限
