@@ -11,7 +11,7 @@ contract RXRToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable {
     uint256 public _maxSupply; //铸币上限
 
     constructor(address initialOwner)
-        ERC20("RXRToken", "RXR")
+        ERC20("RXRCToken", "RXRC")
         Ownable(initialOwner)
     {
         _maxSupply = 380000000 * 10 ** 18;
